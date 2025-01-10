@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="flex justify-center flex-col items-center min-h-screen">
-      <div class="flex">
-        <div id="prevBtn" class="flex items-center hover:opacity-50">
-          <img src="/images/chevronL.svg" class="opacity-70 h-10" />
+      <div class="flex relative">
+        <div id="prevBtn" class="flex absolute inset-0 items-center hover:cursor-pointer">
+          <img src="/images/chevronL.svg" class="opacity-50 h-10" />
         </div>
         <picture>
           <source media="(min-width: 1024px)" srcset="/images/leaves@8.jpg" />
@@ -27,8 +27,9 @@
           <source media="(min-width: 600px)" srcset="/images/green@5.jpg" />
           <img src="/images/green.jpg" class="image hidden" />
         </picture>
-        <div id="nxtBtn" class="flex items-center hover:opacity-50">
-          <img src="/images/chevronR.svg" class="opacity-70 h-10" />
+
+        <div id="nxtBtn" class="flex absolute  right-0 items-center hover:cursor-pointer" style="top: 50%; transform: translateY(-50%);">
+          <img src="/images/chevronR.svg" class="opacity-50 h-10" />
         </div>
       </div>
       <div class="flex w-24 justify-around mt-4">
