@@ -7,10 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="flex justify-center flex-col items-center min-h-screen">
-      <div class="flex relative">
-        <div id="prevBtn" class="flex absolute inset-0 items-center hover:cursor-pointer">
-          <img src="/images/chevronL.svg" class="opacity-50 h-10" />
+    <nav
+      class="h-16 flex justify-center text-2xl items-center font-medium bg-black/40 sticky shadow-2xl top-0 z-10 backdrop-blur-lg"
+    >
+      Carousel
+    </nav>
+    <h1
+      class="text-6xl mt-20 font-bold bg-gradient-to-r from-violet-700 to-pink-600 text-transparent inline-block bg-clip-text"
+    >
+      Hello World!!
+    </h1>
+    <div class="flex justify-center flex-col items-center min-h-screen my-20">
+      <div class="flex relative h-1/2">
+        <div class="flex absolute inset-0 items-center ">
+          <button id="prevBtn">
+            <img src="/images/chevronL.svg" class="opacity-50 h-10" />
+          </button>
         </div>
         <picture>
           <source media="(min-width: 1024px)" srcset="/images/leaves@8.jpg" />
@@ -28,7 +40,11 @@
           <img src="/images/green.jpg" class="image hidden" />
         </picture>
 
-        <div id="nxtBtn" class="flex absolute  right-0 items-center hover:cursor-pointer" style="top: 50%; transform: translateY(-50%);">
+        <div
+          id="nxtBtn"
+          class="flex absolute right-0 items-center hover:cursor-pointer"
+          style="top: 50%; transform: translateY(-50%)"
+        >
           <img src="/images/chevronR.svg" class="opacity-50 h-10" />
         </div>
       </div>
