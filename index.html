@@ -12,18 +12,9 @@
     >
       Carousel
     </nav>
-    <h1
-      class="text-6xl mt-20 font-bold bg-gradient-to-r from-violet-700 to-pink-600 text-transparent inline-block bg-clip-text"
-    >
-      Hello World!!
-    </h1>
+
     <div class="flex justify-center flex-col items-center min-h-screen my-20">
       <div class="flex relative h-1/2">
-        <div class="flex absolute inset-0 items-center ">
-          <button id="prevBtn">
-            <img src="/images/chevronL.svg" class="opacity-50 h-10" />
-          </button>
-        </div>
         <picture>
           <source media="(min-width: 1024px)" srcset="/images/leaves@8.jpg" />
           <source media="(min-width: 600px)" srcset="/images/leaves@5.jpg" />
@@ -39,19 +30,19 @@
           <source media="(min-width: 600px)" srcset="/images/green@5.jpg" />
           <img src="/images/green.jpg" class="image hidden" />
         </picture>
-
-        <div
-          id="nxtBtn"
-          class="flex absolute right-0 items-center hover:cursor-pointer"
-          style="top: 50%; transform: translateY(-50%)"
-        >
-          <img src="/images/chevronR.svg" class="opacity-50 h-10" />
+        <div class="flex justify-between absolute inset-0 items-center">
+          <button id="prevBtn">
+            <img src="/images/chevronL.svg" class="opacity-50 h-10" />
+          </button>
+          <button id="nxtBtn">
+            <img src="/images/chevronR.svg" class="opacity-50 h-10" />
+          </button>
         </div>
       </div>
       <div class="flex w-24 justify-around mt-4">
-        <button class="h-3 w-3 rounded-full bg-slate-500"></button>
-        <button class="h-3 w-3 rounded-full bg-slate-300"></button>
-        <button class="h-3 w-3 rounded-full bg-slate-300"></button>
+        <button class="btn h-3 w-3 rounded-full bg-slate-500"></button>
+        <button class="btn h-3 w-3 rounded-full bg-slate-300"></button>
+        <button class="btn h-3 w-3 rounded-full bg-slate-300"></button>
       </div>
     </div>
     <script src="/index.js"></script>
