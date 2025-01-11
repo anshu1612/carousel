@@ -27,3 +27,15 @@ prev.addEventListener("click", () => {
   greyBtn[i].classList.add("bg-slate-500");
   images[i].classList.remove("hidden");
 });
+
+greyBtn.forEach((btn,j)=>{
+  btn.addEventListener('click',()=>{
+    images.forEach((img, index) => {
+      greyBtn[index].classList.remove("bg-slate-500");
+      greyBtn[index].classList.add("bg-slate-300");
+      img.classList.add("hidden");
+    });
+    images[j].classList.remove("hidden");
+    greyBtn[j].classList.add("bg-slate-500");
+  })
+})
